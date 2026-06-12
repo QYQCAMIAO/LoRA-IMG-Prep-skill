@@ -155,7 +155,7 @@ pip install tqdm transformers kornia safetensors
 - [llama.cpp](https://github.com/ggml-org/llama.cpp) `llama-server.exe` — VLM 打标
 - [Qwen3-VL-4B-Instruct-Q6_K.gguf](https://www.modelscope.cn/models/unsloth/Qwen3-VL-4B-Instruct-GGUF/file/view/master) GGUF 模型
 - [RealESRGAN x4plus](https://github.com/xinntao/Real-ESRGAN) 模型
-- [RMBG-2.0](https://huggingface.co/briaai/RMBG-2.0) BiRefNet 模型
+- [RMBG-2.0](https://huggingface.co/briaai/RMBG-2.0)](https://www.modelscope.cn/models/AI-ModelScope/RMBG-2.0/summary) BiRefNet 模型
 
 ---
 
