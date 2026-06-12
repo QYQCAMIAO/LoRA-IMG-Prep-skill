@@ -153,7 +153,7 @@ pip install tqdm transformers kornia safetensors
 **需要：**
 - NVIDIA GPU (CUDA) — AI 放大和 RMBG 抠图
 - [llama.cpp](https://github.com/ggml-org/llama.cpp) `llama-server.exe` — VLM 打标
-- [Qwen3-VL-4B](https://huggingface.co/Qwen/Qwen3-VL-4B-Instruct) GGUF 模型
+- [Qwen3-VL-4B-Instruct-Q6_K.gguf]((https://www.modelscope.cn/models/unsloth/Qwen3-VL-4B-Instruct-GGUF/file/view/master/Qwen3-VL-4B-Instruct-Q6_K.gguf?status=2)) GGUF 模型
 - [RealESRGAN x4plus](https://github.com/xinntao/Real-ESRGAN) 模型
 - [RMBG-2.0](https://huggingface.co/briaai/RMBG-2.0) BiRefNet 模型
 
