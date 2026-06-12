@@ -1,0 +1,51 @@
+{
+  "quality": 95,
+  "threshold": 245,
+  "black_threshold": 40,
+  "target_size": 1024,
+  "crop_padding": 16,
+  "vlm_max_tokens": 400,
+  "vlm_temperature": 0.1,
+  "tag_mode": "bilingual",
+  "vlm_presize_max": 512,
+  "vlm_prompt": "核心要求：用一段中文一段英文（只用输出中文和英文，不要出现\"中文：\" \"English:\"）的自然语言简要描述这张图片里的角色的外观，不要掺杂任何主观性的描述，禁止任何风格类的描述词出现。禁止出现：\"这个角色是谁\"",
+  "llama_server": {
+    "path": "E:/lora-img-prep-skill/required_model/llama-b9351-bin-win-cuda-13.1-x64/llama-server.exe",
+    "host": "127.0.0.1",
+    "port": 8080,
+    "model": "E:/lora-img-prep-skill/required_model/qwen3-vl-4b-instruct/Qwen3-VL-4B-Instruct-Q6_K.gguf",
+    "mmproj": "E:/lora-img-prep-skill/required_model/qwen3-vl-4b-instruct/mmproj-BF16.gguf",
+    "ngl": 42,
+    "ctx_size": 32000,
+    "batch_size": 512,
+    "ubatch_size": 128,
+    "threads": 8,
+    "threads_batch": 8,
+    "cache_type_k": "q8_0",
+    "cache_type_v": "q8_0",
+    "flash_attn": "on",
+    "no_mmap": true,
+    "kv_unified": true,
+    "auto_stop": true
+  },
+  "realesrgan": {
+    "model_path": "E:/lora-img-prep-skill/required_model/RealESRGAN_x4plus.pth",
+    "sha256": "035c4b1ecf4e423849bd868a09dbe2781407c2532f807583e44aa52f48a760aa",
+    "download_mirrors": [
+      "https://cdn-lfs-cn-1.modelscope.cn/prod/lfs-objects/4f/a0/d38905f75ac06eb49a7951b426670021be3018265fd191d2125df9d682f1?filename=RealESRGAN_x4plus.pth&namespace=muse&repository=RealESRGAN_x4plus&revision=master&tag=model&auth_key=1781232109-98f085774e4747a69dbac7023ef4a7c8-0-c89703a2b1138f5b59ba2d0a49d2df2d"
+    ]
+  },
+  "rmbg": {
+    "enabled": true,
+    "model_path": "E:/lora-img-prep-skill/required_model/RMBG-2.0",
+    "batch_size": 4
+  },
+  "background": {
+    "mode": "rule_based_rmbg",
+    "output_bg": "#ffffff",
+    "white_threshold": 245,
+    "white_ratio_threshold": 0.85,
+    "border_ratio": 0.05,
+    "fallback": "original"
+  }
+}
